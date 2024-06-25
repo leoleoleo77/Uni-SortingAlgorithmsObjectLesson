@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="merge_style.css" />
+	</head>
+
+	<body>
+		<title>Merge Sort Visualization</title>
+
+		<div class="settings">
+				<h2 style="color: black;">Array to sort:</h2>
+				<input
+					id="arr"
+					type="text"
+					placeholder="ex. 6, 5, 3, 1, 8, 7, 2, 4"/>
+				<br>
+				<button id="save-settings">OK</button>
+				<button id="random" onclick="generateRandomArray()">Random</button>
+		</div>
+
+		<header>			
+		<div class="gradient-border"></div>
+		</header>
+
+		<main>
+			<section class="animation-zone"></section>
+
+			<section class="errors"><p class="error-msg"></p></section>
+
+			<section class="buttons">
+				<div class="wrapper">
+					<div><button id="sort">Sort</button></div>
+					<div><button id="unsort">Unsort</button></div>
+				</div>
+			</section>
+		</main>
+
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="js/arrays.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/settings.js"></script>
+		<script src="js/animation.js"></script>
+	</body>
+</html>
